@@ -1,0 +1,25 @@
+<app-menu></app-menu>
+
+<div class="container">
+    <br>
+    <div class="alert alert-success alert-dismissible fade show" role="alert" *ngIf="alertaSucess">
+        <strong>Bien!</strong> Tu entrada coincide con "Google".
+    </div>
+    <div class="alert alert-danger alert-dismissible fade show" role="alert" *ngIf="alertaWrong">
+        <strong>Bien!</strong> Tu entrada no coincide con "Google".
+    </div>
+    <div class="row">
+        <div class="col-sm">
+        </div>
+        <div class="col-sm">
+            <div class="form-group form">
+                <label for="">Inserte la palabra a validar</label>
+                <input type="text" class="form-control" name="text" [(ngModel)]="texto">
+                <br>
+                <button type="button" class="btn btn-success" (click)="validarTexto()">Validar</button>
+            </div>
+        </div>
+        <div class="col-sm">
+        </div>
+    </div>
+</div>

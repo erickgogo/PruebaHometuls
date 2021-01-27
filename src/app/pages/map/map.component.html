@@ -1,0 +1,8 @@
+<app-menu></app-menu>
+<!-- this creates a google map on the page with the given lat/lng from -->
+<!-- the component as the initial center of the map: -->
+<agm-map [latitude]="lat" [longitude]="lng">
+    <div *ngFor="let item of coordenadas">
+        <agm-marker [latitude]="item.latitude" [longitude]="item.longitude" *ngIf="item.longitude!=null"></agm-marker>
+    </div>
+</agm-map>

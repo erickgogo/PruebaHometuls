@@ -1,0 +1,32 @@
+export class registro {
+  anonymus: boolean;
+  categoryA: string;
+  categoryB: string;
+  categoryC: string;
+  citId: string;
+  citName: string;
+  code_city: string;
+  code_state: string;
+  comments: string;
+  countItems: string;
+  date: string;
+  email: string;
+  fileRecords: string;
+  gender: string;
+  id: string;
+  image: string;
+  institutionName: string;
+  ip_address: string;
+  ip_info: string;
+  latitude: string;
+  locInfo: string;
+  longitude: string;
+  name: string;
+  phone: string;
+  politicA: string;
+  politicB: string;
+  politicC: string;
+  staName: string;
+  subCategory: string;
+  uuid: string;
+}

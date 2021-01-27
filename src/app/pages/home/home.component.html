@@ -1,0 +1,44 @@
+<app-menu></app-menu>
+<div class="container">
+    <br>
+    <div class="alert alert-success alert-dismissible fade show" role="alert" *ngIf="alertaSucess">
+        <strong>Bien!</strong> Tu entrada coincide con "Google".
+    </div>
+    <div class="alert alert-danger alert-dismissible fade show" role="alert" *ngIf="alertaWrong">
+        <strong>Bien!</strong> Tu entrada no coincide con "Google".
+    </div>
+    <div class="row">
+        <div class="col-sm">
+        </div>
+        <div class="col-sm">
+            <div class="form-group form">
+                <form>
+                    <label for="">UUid</label>
+                    <label for="">{{modelo.uuid}}</label>
+                    <label for="">Nombre de institución</label>
+                    <input type="text" class="form-control" name="text" [(ngModel)]="modelo.institutionName">
+                    <label for="">Comentario</label>
+                    <input type="text" class="form-control" name="text" [(ngModel)]="modelo.comments">
+                    <label for="">Anonimo?</label>
+                    <input type="checkbox" class="form-control" name="text" [(ngModel)]="modelo.anonymus">
+                    <label for="">Nombre</label>
+                    <input type="text" class="form-control" name="text" [(ngModel)]="modelo.name">
+                    <label for="">Email</label>
+                    <input type="text" class="form-control" name="text" [(ngModel)]="modelo.email">
+                    <label for="">Teléfono</label>
+                    <input type="text" class="form-control" name="text" [(ngModel)]="modelo.phone">
+                    <label for="">Genero</label>
+                    <input type="text" class="form-control" name="text" [(ngModel)]="modelo.gender">
+                    <label for="">Latitud</label>
+                    <input type="text" class="form-control" name="text" [(ngModel)]="modelo.latitude" required>
+                    <label for="">Longitud</label>
+                    <input type="text" class="form-control" name="text" [(ngModel)]="modelo.longitude" required>
+                    <br>
+                    <button type="submit" class="btn btn-success" (click)="crearRegistro()">Crear registro</button>
+                </form>
+            </div>
+        </div>
+        <div class="col-sm">
+        </div>
+    </div>
+</div>
