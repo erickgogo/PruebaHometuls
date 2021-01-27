@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   url: 'https://34.201.19.114:40003/',
-  googleApiKey : 'AIzaSyBr8MzmnA65h5MW68Ugt65rxw7UfK2Ti3s',
+  googleApiKey : '',
 };
 
 /*
